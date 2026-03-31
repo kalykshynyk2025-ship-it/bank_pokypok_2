@@ -4,9 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Банк покупок — Калык шынык</title>
+    <style>
+      body { margin: 0; font-family: Inter, system-ui, sans-serif; background: #f4f8f3; }
+      .boot {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        color: #1f2a1f;
+      }
+      .boot__card {
+        background: #fff;
+        border: 1px solid #d8e3d8;
+        border-radius: 12px;
+        padding: 16px 20px;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="boot">
+        <div class="boot__card">Загрузка приложения…</div>
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
