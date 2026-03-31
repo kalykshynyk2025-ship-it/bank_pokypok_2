@@ -1,0 +1,75 @@
+export const questScenario = {
+  title: "Банк покупок",
+  brand: "Калык шынык",
+  levels: [
+    {
+      level: 1,
+      key: "spirit",
+      name: "Дух входа",
+      location: "Главный вход ТЦ",
+      qrHint: "Приветствие от бренда",
+      task: "Найди 3 предмета светло-зелёного цвета и сделай фото",
+      proof: "Фото",
+      qrCode: "GREEN-START",
+    },
+    {
+      level: 2,
+      key: "ornament",
+      name: "Код предков",
+      location: "Любой этаж рядом с декором",
+      qrHint: "QR-код у элемента декора",
+      task: "Найди узор, похожий на марийский орнамент, и ответь на вопрос",
+      proof: "Фото + ответ",
+      qrCode: "ANCESTOR-CODE",
+      question: {
+        text: "Что символизирует этот знак?",
+        options: ["Единство семьи", "Случайный узор", "Только рекламу"],
+      },
+    },
+    {
+      level: 3,
+      key: "space",
+      name: "Живое пространство",
+      location: "Партнёрский магазин",
+      qrHint: "QR-код у кассы",
+      task: "Запиши видео до 10 секунд с фразой: Я в Банке покупок",
+      proof: "Видео",
+      qrCode: "LIVE-SPACE",
+    },
+    {
+      level: 4,
+      key: "social",
+      name: "Связь людей",
+      location: "Любая зона ТЦ",
+      qrHint: "Без QR: социальное задание",
+      task: "Сделай совместное фото с другим участником",
+      proof: "Фото",
+      qrCode: "SOCIAL-LINK",
+    },
+    {
+      level: 5,
+      key: "final",
+      name: "Испытание знания",
+      location: "Финальная зона",
+      qrHint: "Финальный QR-код",
+      task: "Ответь, что означает бренд Калык шынык",
+      proof: "Ответ",
+      qrCode: "FINAL-WISDOM",
+      question: {
+        text: "Что означает бренд “Калык шынык”?",
+        options: ["Народный сувенир", "Быстрые покупки", "Только онлайн-магазин"],
+      },
+    },
+  ],
+  rewardBySpeed: {
+    fast: ["Сумка", "Украшение"],
+    standard: ["Игрушка", "Открытка"],
+  },
+  paymentMethods: ["VTB Pay", "Sber Pay", "Stripe", "PayPal"],
+};
+
+export const shopItems = [
+  { id: "bag", title: "Эко-сумка", price: 490, color: "lightgreen" },
+  { id: "toy", title: "Игрушка", price: 350, color: "lightpink" },
+  { id: "postcard", title: "Открытка", price: 120, color: "lightyellow" },
+];
